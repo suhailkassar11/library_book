@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library-book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="content">
+            <h1>My Library Book</h1>
+            <p>This is a project for The Odin Project in which I have to make a library using Object Constructors and LocalStorage.
+                You can also view the Github repository of this project.</p>
+            <div class="form">
+                <form id="myForm">
+                    <label for="book">Book</label>
+                    <input class="input"  type="text" placeholder="Enter Book Name" id="book" name="book">
+                    <label for="author">Author Name</label>
+                    <input class="input" type="text" placeholder="Enter Author Name" id="author" name="author">
+                    <label for="pages">Pages</label>
+                    <input class="input" type="number" placeholder="Enter no. of pages" id="pages" name="pages">
+                    <button class="button" onclick="saveFormData()">Submit</button>
+                    <!-- <input class="input" type="text" name="username" placeholder="Username">
+                    <input class="input" type="password" name="password" placeholder="Password">
+                    <button class="button" type="button" onClick="saveFormData()">Save Form Data</button> -->
+                </form>
+            </div>
+            <div>
+                <table class="table" id="dataTable">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Book</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                      </tr>
+                      
+                        <!-- <tr>
+                          <th>Username</th>
+                          <th>Password</th>
+                        </tr> -->
+            
+                    </thead>
+                    <tbody>
+                      <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>english</td>
+                        <td>steve</td>
+                        <td>155</td>
+                        <td><button class="read">READ</button></td>
+                        <td><button class="delete">DELETE</button></td>
+                      </tr> -->
+                    </tbody>
+                  </table> 
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
